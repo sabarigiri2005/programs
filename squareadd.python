@@ -1,0 +1,18 @@
+import math
+a=int(input("Enter the value : "))
+t=[]
+k=0
+for i in range(a+1):
+    if i % 2==1:
+        t.append(i)
+l=len(t)
+r=int(math.sqrt(a))
+for i in range(r):
+    for j in range(r):
+        if(t[-1]!=t[k]):
+            print(t[k],end=" ")
+            k+=1
+        else:
+            print(t[k])
+            break
+    print()
